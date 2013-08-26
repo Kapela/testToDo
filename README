@@ -6,14 +6,14 @@ testToDo - Front End Web Development Stack
 | \ jade
 | \ stylesheets
 | \ vendor
-\ components (for Bower vendor downloads)
+\ bower_components (for Bower vendor downloads)
 \ dist (for minified production)
 \ node_modules (for Grunt files)
 \ public
 | \ javascripts
 | \ stylesheets
 | index.html
-component.json (for bower)
+bower.json (for bower)
 config.rb (for compass)
 Gruntfile.coffee (for Grunt)
 package.json (for Gruntfiles)
