@@ -1,18 +1,22 @@
 requirejs.config(
   baseUrl: "public/javascripts",
   paths:
-    backbone: "../components/backbone/backbone-min",
-    "backbone.picky": "../components/backbone.picky/lib/amd/backbone.picky.min",
-    "backbone.syphon": "../components/backbone.syphon/lib/amd/backbone.syphon.min",
-    jquery: "../components/jquery/jquery.min",
-    "jquery-ui": "../components/jquery-ui/ui/minified/jquery-ui.min",
-    underscore: "../components/underscore/underscore-min",
-    json2: "../components/json2/json2",
-    localStorage: "../components/backbone.localStorage/backbone.localStorage-min",
-    marionette: "../components/marionette/lib/core/amd/backbone.marionette.min",
-    spin: "../components/spin.js/dist/spin.min/",
-    tpl: "../components/requirejs-tpl/tlp/",
-    handlebars: "../components/handlebars/handlebars",
+    backbone: "../bower_components/backbone/backbone-min",
+    "backbone.picky": "../bower_components/backbone.picky/lib/amd/backbone.picky.min",
+    "backbone.syphon": "../bower_components/backbone.syphon/lib/amd/backbone.syphon.min",
+    jquery: "../bower_components/jquery/jquery.min",
+    "jquery-ui": "../bower_components/jquery-ui/ui/minified/jquery-ui.min",
+    underscore: "../bower_components/underscore/underscore-min",
+    json2: "../bower_components/json2/json2",
+    localStorage: "../bower_components/backbone.localStorage/backbone.localStorage-min",
+    marionette: "../bower_components/marionette/lib/core/amd/backbone.marionette.min",
+    spin: "../bower_components/spin.js/dist/spin.min/",
+    tpl: "../bower_components/requirejs-tpl/tlp/",
+    handlebars: "../bower_components/handlebars/handlebars",
+    mocha: "../bower_components/mocha/mocha",
+    chai: "../bower_components/chai/chai",
+    chaibackbone: "../bower_components/chai-backbone/chai-backbone",
+
 
   shim: 
     underscore: 
