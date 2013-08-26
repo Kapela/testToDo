@@ -20,6 +20,9 @@ module.exports = (grunt) ->
         options:
           sassDir: "assets/stylesheets"
           cssDir: "public/stylesheets"
+    
+    mocha_phantomjs:
+      all: ["test/**/*.html"],
 
     watch:
       coffee:
@@ -35,17 +38,13 @@ module.exports = (grunt) ->
         tasks: ["compass:dev"]
 
 
-    compass:
-      dev:
-        options:
-          sassDir: 'assets/stylesheets/'
-          cssDir: 'public/stylesheets/'
-
   grunt.loadNpmTasks "grunt-contrib-compass"
   grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-requirejs"
   grunt.loadNpmTasks "grunt-contrib-handlebars"
+  grunt.loadNpmTasks "grunt-mocha-phantomjs"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.registerTask "test", ["jshint", "qunit"]
   # grunt.r
+  #

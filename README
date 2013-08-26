@@ -28,9 +28,9 @@ Spin.js
 
 TESTING
 Mocha
+mocha-phantomjs
 Chai
-Sinon
-Chai-Backbone
+$ mocha-phantomjs TestRunner.html
 
 CSS
 Compass
