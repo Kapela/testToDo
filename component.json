@@ -19,7 +19,8 @@
     "requirejs-tpl": "latest",
     "mocha": "~1.12.0",
     "chai-backbone": "latest",
-    "sinon-chai": "~2.4.0"
+    "sinon-chai": "~2.4.0",
+    "chai": "~1.7.2"
   },
   "ignore": [
     "**/.*",
