@@ -3,3 +3,10 @@ describe("test", function () {
         expect(2).to.equal(2);
     });
 });
+
+describe('#indexOf()', function(){
+  it('should return -1 when not present', function(){
+    [1,2,3].indexOf(4).should.equal(-1);
+  });
+});
+
