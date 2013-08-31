@@ -1,4 +1,4 @@
-requirejs.config(
+requirejs.config
   baseUrl: "public/javascripts",
   paths:
     backbone: "../bower_components/backbone/backbone-min",
@@ -29,7 +29,5 @@ requirejs.config(
     marionette: 
       deps: ["backbone"],
       exports: "Marionette",
-    "jquery-ui": ["jquery"],
-    localstorage: ["backbone"],
-    "spin.jquery": ["spin", "jquery"]
+    "jquery-ui": ["jquery"]
  

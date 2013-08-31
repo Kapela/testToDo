@@ -12,7 +12,8 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'public/javascripts/test.js' : 'assets/coffeescripts/test.coffee',
+          'public/javascripts/test/test.js' : 'assets/coffeescripts/test/test.coffee',
+          'public/javascripts/test/person_spec.js' : 'assets/coffeescripts/test/person_spec.coffee'
           'public/javascripts/require_main.js' : 'assets/coffeescripts/require_main.coffee'
 
     compass:
