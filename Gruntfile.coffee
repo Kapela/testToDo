@@ -21,9 +21,35 @@ module.exports = (grunt) ->
         options:
           sassDir: "assets/stylesheets"
           cssDir: "public/stylesheets"
+
+    jslint:
+      src: [""],
+      exclude: [""],
+      options:
+        junit: "out/client-junit.xml", #
+        log: "out/client-lint.log",
+        jslintXml: "out/client/jslint.xml",
+        errorsOnly: true,
+        failOnError: true,
+        checkstyle: "out/client-checkstyle.xml"
+
     
     mocha_phantomjs:
       all: ["test/**/*.html"],
+
+    requirejs:
+      compile:
+        options:
+          baseUrl: "path/to/base"
+          ### All modules are located relative to this path.
+          #
+          ###
+          
+          mainConfigFile: "path/to/config.js"
+          # 
+          # 
+          
+          out: "path/to/optimized.js"
 
     watch:
       coffee:
@@ -37,6 +63,10 @@ module.exports = (grunt) ->
       compass:
         files: ["assets/stylesheets/*.(scss,sass)"]
         tasks: ["compass:dev"]
+
+      mocha_phantomjs:
+        files: ["test/**/*.html"]
+        tasks: ["mocha_phantomjs"]
 
 
   grunt.loadNpmTasks "grunt-contrib-compass"
