@@ -16,7 +16,7 @@ module.exports = (grunt) ->
           #'public/js/test/person_spec.js' : 'assets/coffeescripts/test/person_spec.coffee'
 
           # Main Require js file
-          'public/js/require_main.js' : 'assets/coffeescripts/require_main.coffee'
+          'public/js/require_main.js' : 'assets/cs/require_main.coffee'
 
 
     compass:
