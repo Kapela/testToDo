@@ -12,9 +12,12 @@ module.exports = (grunt) ->
     coffee:
       compile:
         files:
-          'public/javascripts/test/test.js' : 'assets/coffeescripts/test/test.coffee',
-          'public/javascripts/test/person_spec.js' : 'assets/coffeescripts/test/person_spec.coffee'
-          'public/javascripts/require_main.js' : 'assets/coffeescripts/require_main.coffee'
+          #'public/js/test/test.js' : 'assets/coffeescripts/test/test.coffee',
+          #'public/js/test/person_spec.js' : 'assets/coffeescripts/test/person_spec.coffee'
+
+          # Main Require js file
+          'public/js/require_main.js' : 'assets/coffeescripts/require_main.coffee'
+
 
     compass:
       dev:
@@ -34,9 +37,6 @@ module.exports = (grunt) ->
         checkstyle: "out/client-checkstyle.xml"
 
     
-    mocha_phantomjs:
-      all: ["test/**/*.html"],
-
     requirejs:
       compile:
         options:
@@ -64,17 +64,13 @@ module.exports = (grunt) ->
         files: ["assets/stylesheets/*.(scss,sass)"]
         tasks: ["compass:dev"]
 
-      mocha_phantomjs:
-        files: ["test/**/*.html"]
-        tasks: ["mocha_phantomjs"]
-
 
   grunt.loadNpmTasks "grunt-contrib-compass"
   grunt.loadNpmTasks "grunt-contrib-jade"
   grunt.loadNpmTasks "grunt-contrib-coffee"
   grunt.loadNpmTasks "grunt-contrib-requirejs"
   grunt.loadNpmTasks "grunt-contrib-handlebars"
-  grunt.loadNpmTasks "grunt-mocha-phantomjs"
+  grunt.loadNpmTasks "grunt-contrib-jasmine"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.registerTask "test", ["jshint", "qunit"]
   # grunt.r
