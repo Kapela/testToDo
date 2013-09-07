@@ -22,8 +22,8 @@ module.exports = (grunt) ->
     compass:
       dev:
         options:
-          sassDir: "assets/stylesheets"
-          cssDir: "public/stylesheets"
+          sassDir: "assets/css"
+          cssDir: "public/css"
 
     jslint:
       src: [""],
